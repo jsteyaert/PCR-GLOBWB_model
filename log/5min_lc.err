@@ -1,0 +1,59 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"2021"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "2021"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"Miniconda3/4.9.2"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "Miniconda3/4.9.2"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+2025-01-21 13:27:19,783 disclaimer INFO 
+
+ PCR-GLOBWB (PCRaster Global Water Balance) Global Hydrological Model                       
+
+ Copyright (C) 2016, Edwin H. Sutanudjaja, Rens van Beek, Niko Wanders, Yoshihide Wada,     
+ Joyce H. C. Bosmans, Niels Drost, Ruud J. van der Ent, Inge E. M. de Graaf, Jannis M. Hoch,
+ Kor de Jong, Derek Karssenberg, Patricia Lopez Lopez, Stefanie Pessenteiner, Oliver Schmitz,
+ Menno W. Straatsma, Ekkamol Vannametee, Dominik Wisser, and Marc F. P. Bierkens            
+ Faculty of Geosciences, Utrecht University, Utrecht, The Netherlands                       
+
+ This program comes with ABSOLUTELY NO WARRANTY                                             
+ This is free software, and you are welcome to redistribute it under certain conditions     
+ See the LICENSE file for more details                                                      
+
+
+2025-01-21 13:27:19,865 configuration INFO Model run started at 2025-01-21 13:27:06.025896
+2025-01-21 13:27:20,008 configuration INFO Logging output to /scratch/depfg/steya001/1km_rhine/5min_lc_30_sec_routing/log/5min_landcover_30sec_model.ini_2025-01-21T13.27.06.025896.log
+2025-01-21 13:27:20,101 configuration INFO Debugging output to /scratch/depfg/steya001/1km_rhine/5min_lc_30_sec_routing/log/5min_landcover_30sec_model.ini_2025-01-21T13.27.06.025896.dbg
+2025-01-21 13:27:20,151 configuration INFO OS platform: Linux
+2025-01-21 13:27:20,286 configuration INFO OS relesase: 5.14.0-427.42.1.el9_4.x86_64
+2025-01-21 13:27:20,364 configuration INFO Python version:
+3.10.8 | packaged by conda-forge | (main, Nov 22 2022, 08:26:04) [GCC 10.4.0]
+2025-01-21 13:27:20,909 configuration INFO PCRaster version (output from pcrcalc): see the file /scratch/depfg/steya001/1km_rhine/5min_lc_30_sec_routing/log/5min_landcover_30sec_model.ini_2025-01-21T13.27.06.025896_pcrcalc_output.txt
+2025-01-21 13:27:21,052 configuration INFO PATH=/eejit/home/steya001/miniconda/envs/pcr_model/bin:/eejit/home/steya001/miniconda/bin:/eejit/home/steya001/miniconda/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/eejit/home/steya001/.local/bin:/eejit/home/steya001/bin
+2025-01-21 13:27:21,206 configuration INFO PYTHONPATH=N/A
+2025-01-21 13:27:21,266 configuration INFO HOSTNAME: gpu011
+2025-01-21 13:27:21,585 configuration INFO PCRASTER_NR_WORKER_THREADS (set by export, only for PCRaster version >= 4.2): N/A
+2025-01-21 13:27:22,244 configuration WARNING The option "useMODFLOW" is not defined in the "groundwaterOptions" of the configuration file. We assume "False" for this option.
+2025-01-21 13:27:22,281 configuration WARNING The option "maximumDailyGroundwaterAbstraction" is not defined in the "groundwaterOptions" of the configuration file. This run assumes "0.050 m/day" for this option.
+2025-01-21 13:27:22,364 configuration WARNING The option "maximumDailyFossilGroundwaterAbstraction" is not defined in the "groundwaterOptions" of the configuration file. This run assumes "0.020 m/day" for this option.
+2025-01-21 13:27:22,467 configuration WARNING The option "prioritizeLocalSourceToMeetWaterDemand" is not defined in the "landSurfaceOptions" of the configuration file. We assume "True" for this option. Local water sources are first used before abstracting water from neighboring cells.
+2025-01-21 13:27:22,538 __main__ INFO Spin-Up #Total Years: 10
+2025-01-21 13:27:22,636 __main__ INFO Spin-Up Run No. 1
+2025-01-21 13:27:32,759 meteo INFO Method for the reference potential evaporation: Input
+2025-01-21 13:27:33,358 meteo INFO Temperature forcing will be downscaled to the cloneMap resolution.
