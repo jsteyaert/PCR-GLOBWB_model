@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#SBATCH --output ./log/30sec_lc_meier.out
-#SBATCH --error ./log/30sec_lc_meier.err
-#SBATCH --time 96:00:00
+#SBATCH --output ./log/30sec_lc_meier_updated_pn.out
+#SBATCH --error ./log/30sec_lc_meier_updated_pn.err
+#SBATCH --time 240:00:00 
 #SBATCH -n 32
-#SBATCH -J 30sec_meier
+#SBATCH -J 30pn
 
 
 
@@ -19,8 +19,9 @@ module load Miniconda3/4.9.2
 
 #export PCRASTER_NR_WORKER_THREADS=32
 
+conda run -n pcr_model --no-capture-output python /eejit/home/steya001/climate_pcrglobwb/PCR-GLOBWB_model/model/deterministic_runner.py /eejit/home/steya001/climate_pcrglobwb/PCR-GLOBWB_model/config/30sec_jen/30sec_meier_updated_np.ini
 
-conda run -n pcr_model --no-capture-output python /eejit/home/steya001/climate_pcrglobwb/PCR-GLOBWB_model/model/deterministic_runner.py /eejit/home/steya001/climate_pcrglobwb/PCR-GLOBWB_model/config/30sec_jen/30_second_landcover_meier_g.ini
+#conda run -n pcr_model --no-capture-output python /eejit/home/steya001/climate_pcrglobwb/PCR-GLOBWB_model/model/deterministic_runner.py /eejit/home/steya001/climate_pcrglobwb/PCR-GLOBWB_model/config/30sec_jen/30sec_lc_meier.ini
 
 echo "Finished $(date '+%d/%m/%Y %H:%M:%S')"
 
